@@ -1,0 +1,37 @@
+.animate {
+    display: inline;
+    transition: all 1s;
+    animation: animation 0.7s;
+}
+
+.dice-animate {
+    transition: all 1s;
+    animation: rotate 0.8s;
+}
+
+
+@keyframes animation {
+    0% {
+        transform: translateY(0px);
+    }
+
+
+    100% {
+        transform: translateY(-100px);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+
+    50% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
